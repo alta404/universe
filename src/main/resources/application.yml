@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: "universe-schedule"
+    admin:
+      enabled: true
+springdoc:
+  swagger-ui:
+    path: /api
+universe:
+  schedule:
+    config:
+      endpoint: events.githubuniverse.com
+      path: /api/search
+#      headers:
+#        rf-api-profile-id: "lUapEjlZDqHeL7TB5wqnlEbg2gEP4xNB"
+#        rf-widget-id: "03JSiuv3O8eGJe2pUkphdRuxgrkRGUmg"
+  routes:
+    schedule:
+      schedule-config:
+        host: ${universe.schedule.config.endpoint}
+        port: "443"
+      endpoint: "https://${universe.schedule.config.endpoint}${universe.schedule.config.path}" #rest://method:path[:uriTemplate]?[options]
+      wiretap: "schedule.json"
