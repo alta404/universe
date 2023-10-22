@@ -11,7 +11,7 @@ import org.yul.github.universe.service.ContentService;
 import java.util.List;
 import java.util.Map;
 
-@Route("schedule")
+@Route()
 public class MainView extends VerticalLayout {
 
 
