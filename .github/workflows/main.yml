@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is submitting dependencies 🚀
 on: 
   push:
     paths:
-      - "."
+      - "pom.xml"
 jobs:
   Universe-Actions:
     runs-on: ubuntu-latest
