@@ -15,7 +15,7 @@
     <description>Github Universe schedule</description>
     <properties>
         <java.version>21</java.version>
-        <apache.camel.version>4.1.0</apache.camel.version>
+        <apache.camel.version>4.2.0</apache.camel.version>
         <vaadin.version>24.2.1</vaadin.version>
     </properties>
     <dependencyManagement>
